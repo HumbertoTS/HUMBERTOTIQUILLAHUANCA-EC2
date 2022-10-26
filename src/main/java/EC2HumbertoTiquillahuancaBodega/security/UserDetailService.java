@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import EC2HumbertoTiquillahuancaBodega.model.Usuario;
-import EC2HumbertoTiquillahuancaBodega.repository.UsuarioRepository;
 
 @Service
 public class UserDetailService implements UserDetailsService {
