@@ -24,10 +24,12 @@ public class Productos {
 	private Integer precio;
 	private Integer stock;
 	
+	//Modelo Cliente
 	@ManyToMany(mappedBy = "productos", cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	private List<Cliente> cliente = new ArrayList<>();
 	
-	@OneToMany(mappedBy = "productos")
+	//Modelo Bodega
+	@OneToMany(mappedBy = "producto")
 	private List<Bodega> bodega =new ArrayList<>();
 	
 	

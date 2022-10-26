@@ -28,6 +28,7 @@ public class BodegaController {
 	
 	@RequestMapping(path="/guardar", method = RequestMethod.POST)
 	public ResponseEntity<Void> guardar(@RequestBody Bodega bodega ){
+		//bodega.producto.setIdProducto(1);
 		service.guardar(bodega);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}

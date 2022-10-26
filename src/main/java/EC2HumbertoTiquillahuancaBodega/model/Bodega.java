@@ -26,7 +26,7 @@ public class Bodega {
 				nullable = false, 
 				unique = true, 
 				foreignKey = @ForeignKey(foreignKeyDefinition = "foreign key (id_producto) references productos(id_producto)"))
-	private Productos productos;
+	public Productos producto;
 	
 	public Integer getIdBodega() {
 		return idBodega;
@@ -46,5 +46,6 @@ public class Bodega {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
+	
 
 }
